@@ -19,12 +19,53 @@ $(document).ready(function() {
 		
 });
 
+// $("#control").click(function() {
+// 	console.log("control is clicked");
+// 	$(".left").animate({
+// 		width:'80px',
+// 	});
+// });
+
 function projectClick(){
 	var target = event.target || event.srcElement;
 	var id = target.id;
 	var targetRow = document.getElementById(id);
 	$(targetRow).addClass('animated slideOutLeft');
+
+	$(".left").animate({
+		width: '100%',});
+
+	$("#projectName").css({
+		 visibility: 'hidden',});
+
+	if (id == "control"){
+		$("#data").css({
+		 display:'none',});
+		$("#3d").css({
+		 display:'none',});
+		// $('.fa fa-home').css({
+		//  display:'none',});
+		$('h5').css({
+		 display:'none',});
+		$('h3').css({
+		 display:'none',});
+		$('#control').css({
+		 display:'none',});
+		$('.mobile').css({
+		 display:'none',});
+		$('section').css({
+		 display:'block',});
+		$('.left').css({
+		 background: '#5a8ba9',});
+
+		$('#leftCol').removeClass('col span_1_of_2').addClass('col span_3_of_12');
+		$('#rightCol').removeClass('col span_1_of_2').addClass('col span_9_of_12');
+		checkSize();
+	}
+
 }
+
+
 
 
 $(window).resize(function() {
@@ -38,3 +79,5 @@ function checkSize(){
     };
 
 }
+
+

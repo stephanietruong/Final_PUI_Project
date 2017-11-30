@@ -1546,6 +1546,7 @@
 
 .slideOutLeft {
   animation-name: slideOutLeft;
+  animation-duration: .01s;
 }
 
 @keyframes slideOutRight {
@@ -1555,7 +1556,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(3000, 0, 0);
   }
 }
 

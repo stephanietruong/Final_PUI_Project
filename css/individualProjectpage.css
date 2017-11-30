@@ -1,0 +1,127 @@
+
+/*.mobile{
+	display:none;
+}
+
+h3{
+	display:none;
+}
+
+h5{
+	display:none;
+}
+
+img#control{
+	display:none;
+	float: none;
+}*/
+
+.left section.controlInfoHidden i{
+	color: #fff;
+	margin: 30px;
+	font-size: 2em;
+}
+.bold{
+	font-weight: 800px;
+}
+
+.left section.controlInfoHidden{
+	float: right;
+	padding-right: 30px;
+}
+
+.left section.controlInfoHidden h4{
+	color: #fff;
+	font-size: 2em;
+	margin: 64px auto;
+	float: right;
+}
+
+.left section.controlInfoHidden span{
+	float: right;
+/*	min-width: 300px;
+*/
+}
+.left section.controlInfoHidden p{ 
+	font-family:Helvetica Neue, Arial, sans-serif;
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: .8em;
+	float: right;
+}
+
+.left section.controlInfoHidden p.bold{
+	font-weight: bold;
+	margin: 0;
+	float: left;
+}
+
+.right section.controlInfoHidden img{
+	width: 100%;
+}
+
+
+.right section.controlInfoHidden p{
+	text-align: center;
+	padding: 4% 13%;
+}
+
+img#blinds{
+	height: 250px;
+}
+
+div.colored{
+	background-color: #59b1c0;
+	color: #fff;
+	text-align: left;
+	padding-bottom:30px;
+}
+
+h6{
+	font-family:Helvetica Neue, Arial, sans-serif;
+	font-size: 1.15em;
+	text-align: left;
+	padding: 4% 13% 0 13%;
+}
+
+.right section.controlInfoHidden div.colored p{
+	text-align: left;
+}
+
+
+.right section.controlInfoHidden div.splitTwo{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.right section.controlInfoHidden div.splitTwo span.leftspan{
+	max-width: 30%;
+	float: left;
+	padding: 6.5% 0 0 3%;
+}
+
+.right section.controlInfoHidden div.splitTwo img{
+	max-width: 80%;
+}
+
+.right section.controlInfoHidden div.splitTwo span.rightspan{
+	max-width: 66.666%;
+	float: right;
+}
+
+.right section.controlInfoHidden div.splitTwo span.rightspan h6{
+	text-align: left;
+	padding: 4% 0% 0 0%;
+
+}
+
+.right section.controlInfoHidden div.splitTwo span.rightspan p{
+	text-align: left;
+	padding: 2% 15% 0 0;
+}
+
+
+
+
+
+
