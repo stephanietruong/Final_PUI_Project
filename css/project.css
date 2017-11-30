@@ -123,8 +123,11 @@ div.row img{
     width: 16.66%;
 }
 
+
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 0% 0 0% 0%; }
     .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
 }
+

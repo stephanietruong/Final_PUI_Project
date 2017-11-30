@@ -74,7 +74,7 @@ div.colored{
 	background-color: #59b1c0;
 	color: #fff;
 	text-align: left;
-	padding-bottom:30px;
+	padding-bottom:2%;
 }
 
 h6{
@@ -90,8 +90,8 @@ h6{
 
 
 .right section.controlInfoHidden div.splitTwo{
-	margin-top: 30px;
-	margin-bottom: 50px;
+	margin-top:2%;
+	margin-bottom: 3%;
 }
 
 .right section.controlInfoHidden div.splitTwo span.leftspan{
@@ -119,6 +119,51 @@ h6{
 	text-align: left;
 	padding: 2% 15% 0 0;
 }
+
+@media only screen and (max-width:1100px) {
+	.left section.controlInfoHidden p{
+		font-size: .7em;
+	}
+}
+
+
+@media only screen and (max-width:800px) {
+	.left section.controlInfoHidden p{
+		font-size: .5em;
+	}
+
+	.right section.controlInfoHidden h6{
+		font-size: .9em;
+	}
+
+	.right section.controlInfoHidden p{
+		font-size: .7em;
+	}
+}
+
+
+@media only screen and (max-width:800px) {
+	.left section.controlInfoHidden p{
+		font-size: .5em;
+	}
+
+	.right section.controlInfoHidden h6{
+		font-size: .9em;
+	}
+
+	.right section.controlInfoHidden p{
+		font-size: .7em;
+	}
+}
+
+
+@media only screen and (max-width:750px) {
+	.left section.controlInfoHidden p{
+		margin: 10px;
+		float: left;
+}
+
+
 
 
 

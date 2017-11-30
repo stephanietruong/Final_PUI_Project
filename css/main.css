@@ -172,4 +172,127 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    body{
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .right h4{
+        padding-top: 60%;
+        font-size: 2em;
+    }
+
+    .right p{
+        font-size: .8em;
+    }
+    .left h3{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    header nav ul{
+        visibility: hidden;
+    }
+
+    .mobile i {
+        visibility: visible;
+        color: #ffffff;
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 3em;
+    }
+
+    h2{
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .col { 
+        margin: 0% 0 0% 0%;
+    }
+
+    .left{
+        height: 300px;
+        min-height: 100px;
+    }
+
+    .left h3{
+        position: static;
+        font-size: 1.75em;
+        padding-top:35%;
+        padding-left: 70%;
+        font-weight: 50;
+    }
+
+    #about img{
+        margin-top: 231px;
+    }
+
+    .right h4{
+        font-size: 1.5em;
+        padding-top: 0%;
+        padding: 100px 0 20px 0;
+        text-align: center;
+    }
+
+    .right p{
+        padding: 0;
+        margin: 10px 10%;
+    }
+
+    .testSize{
+        float:left;
+    }
+
+    .right {
+        padding-bottom: 50px;
+    }
+
+    .right h2{
+       visibility: hidden;
+    }
+
+    .mobile{
+        visibility: visible;
+        float: left;
+        margin-top: 5%;
+        margin-left: 5%;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .mobile i{
+        float: left;
+        margin-right: 10px;
+        font-size: 1em;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+
+     .mobile h5{
+        float: left;
+    }
+
+    .mobile a{
+        color: #fff;
+    }
+
+
+    .mobile a{
+        color: #fff;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
 

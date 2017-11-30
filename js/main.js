@@ -43,8 +43,6 @@ function projectClick(){
 		 display:'none',});
 		$("#3d").css({
 		 display:'none',});
-		// $('.fa fa-home').css({
-		//  display:'none',});
 		$('h5').css({
 		 display:'none',});
 		$('h3').css({
