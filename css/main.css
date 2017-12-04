@@ -34,7 +34,7 @@ section{
     left:5%;
 }
 
-#about img{
+#about img#centerImg{
     position: absolute;
     margin-top: 3%;
     left: 50%;
@@ -199,12 +199,11 @@ body#contact .right p{
     header nav ul{
         visibility: hidden;
     }
-    .mobile i {
+    .mobile img {
         visibility: visible;
-        color: #ffffff;
         margin-top: 10%;
         margin-left: 10%;
-        font-size: 3em;
+        width: 2em;
     }
     h2{
         visibility: hidden;
@@ -228,7 +227,7 @@ body#contact .right p{
         font-weight: 50;
     }
 
-    #about img{
+    #about img#centerImg{
         margin-top: 231px;
     }
 
@@ -265,10 +264,10 @@ body#contact .right p{
         width: 100%;
     }
 
-    .mobile i{
+    .mobile img{
         float: left;
         margin-right: 10px;
-        font-size: 1em;
+        width: 1em;
         margin-top: 0%;
         margin-left: 5%;
     }

@@ -19,8 +19,6 @@ div.row img{
 }
 
 /****************************** MOBILE SCREEN ******************************/
-
-
 .mobile{
     visibility: visible;
     float: left;
@@ -30,10 +28,10 @@ div.row img{
     width: 100%;
 }
 
-.mobile i{
+.mobile img{
     float: left;
     margin-right: 10px;
-    font-size: 1em;
+    width: 1em;
     margin-top: 0%;
     margin-left: 5%;
 }

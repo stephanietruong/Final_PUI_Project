@@ -19,11 +19,10 @@ h6{
 }
 
 /* BACK TO HOMEPAGE */
-.left section.controlInfoHidden i{
-    color: #fff;
+.left section.controlInfoHidden img.back{
     margin-top: 64px;
     margin-left: 30px;
-    font-size: 2em;
+    width: 1.7em;
 }
 
 .left section.controlInfoHidden h4{
