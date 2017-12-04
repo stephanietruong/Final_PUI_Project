@@ -1,24 +1,14 @@
 body {
-    font-family: futura, Helvetica Neue, Arial, sans-serif;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     background-color: #ffffff;
 }
-a {
-    text-decoration: none;
-}
-
 
 section{
     display: none;
 }
 
-p{ font-family:Helvetica Neue, Arial, sans-serif;}
-
-.mobile{
-    visibility: hidden;
-}
 .right h2{
     color: #fff;
 }
@@ -27,20 +17,7 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     float:none;
 }
 
-.clear {
-    clear: both;
-}
-
-/*** PAGE 1 ***/
-
-#about img{
-    position: absolute;
-    margin-top: 3%;
-    left: 50%;
-    margin-left: -80px;
-    text-align: center;
-}
-
+/****************************** ABOUT SCREENS ******************************/
 .left{
     float: left;    
     background-color: #e42d9f;
@@ -55,6 +32,18 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     position:absolute;
     top:70%;
     left:5%;
+}
+
+#about img{
+    position: absolute;
+    margin-top: 3%;
+    left: 50%;
+    margin-left: -80px;
+    text-align: center;
+}
+
+#aboutNav {
+    color: #e42d9f;
 }
 
 .right{
@@ -81,11 +70,31 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     color: #555;
 }
 
-#aboutNav {
-    color: #e42d9f;
+/********************************* CONTACT *********************************/
+
+body#contact .right{
+    min-height:100vh;
 }
 
-/*  SECTIONS  */
+body#contact .right p{
+    font-size: 1.5em;
+   padding-top: 45vh;
+   padding-bottom: 30px;
+
+}
+
+#iconConnect{
+    padding-left: 7%;
+}
+#iconConnect img{
+    margin: 5px 8px;
+}
+
+
+/****************************** END OF CONTACT ******************************/
+
+
+/****************************** RESPONSIVE GRID ******************************/
 .section {
     clear: both;
     padding: 0px;
@@ -163,15 +172,10 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     width: 8.333%;
 }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-    .col {  margin: 0% 0 0% 0%; }
-    
-    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-    width: 100%; 
-    }
-}
+/************************** END OF RESPONSIVE GRID ***************************/
 
+
+/************************** RESPONSIVE SCREENS ***************************/
 @media only screen and (max-width: 1000px) {
     body{
         overflow: auto;
@@ -183,7 +187,6 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
         padding-top: 60%;
         font-size: 2em;
     }
-
     .right p{
         font-size: .8em;
     }
@@ -196,7 +199,6 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
     header nav ul{
         visibility: hidden;
     }
-
     .mobile i {
         visibility: visible;
         color: #ffffff;
@@ -204,7 +206,6 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
         margin-left: 10%;
         font-size: 3em;
     }
-
     h2{
         visibility: hidden;
     }
@@ -212,42 +213,23 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
 
 
 @media only screen and (max-width: 480px) {
-
     .col { 
         margin: 0% 0 0% 0%;
     }
-
     .left{
         height: 300px;
         min-height: 100px;
     }
-
     .left h3{
         position: static;
         font-size: 1.75em;
-        padding-top:35%;
+        padding-top:70px;
         padding-left: 70%;
         font-weight: 50;
     }
 
     #about img{
         margin-top: 231px;
-    }
-
-    .right h4{
-        font-size: 1.5em;
-        padding-top: 0%;
-        padding: 100px 0 20px 0;
-        text-align: center;
-    }
-
-    .right p{
-        padding: 0;
-        margin: 10px 10%;
-    }
-
-    .testSize{
-        float:left;
     }
 
     .right {
@@ -258,6 +240,22 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
        visibility: hidden;
     }
 
+    .right h4{
+        font-size: 1.5em;
+        padding-top: 0%;
+        padding: 100px 0 20px 0;
+        text-align: center;
+    }
+    .right p{
+        padding: 0;
+        margin: 10px 10%;
+    }
+
+    .testSize{
+        float:left;
+    }
+
+    /** SHOW MOBILE **/
     .mobile{
         visibility: visible;
         float: left;
@@ -275,19 +273,20 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
         margin-left: 5%;
     }
 
-     .mobile h5{
-        float: left;
-    }
-
     .mobile a{
         color: #fff;
+        display: inline-block;
+        width: 100%;
     }
+}
 
-
-    .mobile a{
-        color: #fff;
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .col {  margin: 0% 0 0% 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+    width: 100%; 
     }
-
 }
 
 

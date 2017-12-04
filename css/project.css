@@ -1,54 +1,24 @@
 body {
-    font-family: futura, Helvetica Neue, Arial, sans-serif;
-    width: 100vw;
-    height: 100vh;
     overflow: auto;
-    background-color: #ffffff;
 }
 
 .left{
     float: left;    
     background-color: #575da9;
-    width: 100%;
-    height: 100%;
-    min-height:100vh;
 }
 
 .left h3{
     font-size: 3em;
-    color: #ffffff;
     position: absolute;
     top:13%;
     left:30%;
 }
 
-.right{
-    float: right;
-    width: 100%;
-}
-
-.right h4{
-    font-size: 3em;
-    color: #000;
-    padding: 45% 7% 0 7%;
-    color: #414141;
-}
-
-.right p{
-    padding: 8% 15% 15% 7%;
-    font-family: Helvetica Neue, Arial, sans-serif;
-    font-weight: 300;
-    font-size: .9em;
-    line-height: 1.1em;
-}
-
-.right a{
-    color: #555;
-}
-
 div.row img{
     width: 100%;
 }
+
+/****************************** MOBILE SCREEN ******************************/
 
 
 .mobile{
@@ -76,8 +46,7 @@ div.row img{
     color: #fff;
 }
 
-
-
+/****************************** RESPONSIVE GRID ******************************/
 /*  SECTIONS  */
 .section {
     clear: both;
@@ -123,11 +92,49 @@ div.row img{
     width: 16.66%;
 }
 
+/************************** END OF RESPONSIVE GRID ***************************/
 
+/************************** RESPONSIVE SCREENS ***************************/
+
+@media only screen and (max-width: 800px) {
+    .left h3{
+        left:28%;
+        font-size: 2.8em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .left h3{
+        left:28%;
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .left h3{
+        left:20%;
+        font-size: 2.5em;
+    }
+}
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
     .col {  margin: 0% 0 0% 0%; }
     .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
-}
 
+    .left{
+        min-height: 50px;
+        max-height: 150px; 
+    }
+
+    .left h3{   
+        padding-top: 8%;   
+        left: 5%;
+        font-size: 1.75em;
+    }
+
+    .right{
+        padding-bottom: 0;
+    }
+}
+/***********************END OF RESPONSIVE SCREENS ************************/
