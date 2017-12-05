@@ -1,19 +1,16 @@
 $(document).ready(function() {
-	// setTimeout(function(){
- //        document.getElementById('content').addClass('loaded');
- //    }, 3000); //3 secs
- 
 	setTimeout(function(){
+		
+		document.getElementById('hiddenAfter').style.display = "block";
 		$('body').addClass('loaded');
+		// document.getElementById('content').style.display = "block";
+		// document.getElementById('content').style.zIndex = "1500";
+	}, 3500);
 
-		// document.getElementById('Layer_1').style.display = "none";
+	setTimeout(function(){
+		document.getElementsByClassName('typewriter')[0].style.display = "flex";
 
-		document.getElementById('content').style.display = "block";
-		document.getElementById('content').style.zIndex = "1500";
-		// document.getElementById('loader-wrapper').style.z-index=0;
-		// document.getElementById('loader').style.z-index= 0;
-
-	}, 3000);
+	}, 5000);
 
 	if ($(this).width() < 499){
 		$('#mobileHeader').css({
@@ -27,13 +24,6 @@ $(document).ready(function() {
 	checkSize();
 		
 });
-
-// $("#control").click(function() {
-// 	console.log("control is clicked");
-// 	$(".left").animate({
-// 		width:'80px',
-// 	});
-// });
 
 function projectClick(){
 	var target = event.target || event.srcElement;
@@ -168,3 +158,8 @@ function checkSize(){
 }
 
 
+$(".typewriter").velocity(
+    { 
+      easing: [ 60 ],
+      duration: 4000
+    });
