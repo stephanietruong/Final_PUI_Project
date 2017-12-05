@@ -10,7 +10,7 @@
         <!--JAVASCRIPT-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
     </head>
 
     <body>
@@ -81,10 +81,12 @@
                 </div>
             </div>
             
+            <!-- Screen under the loader screen for the transition-->
             <div id ="hiddenAfter">
                 <div class="loader-section section-left"></div>
                 <div class="loader-section section-right"></div>
             </div>
+
         </div>
 
         <!-- HOME PAGE UNDER CONTENT -->
@@ -101,18 +103,14 @@
 
                     <div class="clear"></div>
                 </nav>
-
-                <img src = "img/work.png">
-                 <div class="typewriter">
-                    <h1> BORN TO INNOVATE</h1>
-                </div>
+                 <img src = "img/work.png">
             </header>
 
             <!-- HEADER FOR MOBILE -->
             <header id="mobileHeader" style="display: none;">
                 <nav>
                     <!-- HAMBURGER MENU-->
-                    <div class="container" onclick="iconChange(this)">
+                    <div class="container" onclick="changeForMobileMenu(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
@@ -128,12 +126,13 @@
 
                     <div class="clear"></div>
                 </nav>
-
-                <img src = "img/work.png">
-                <div class="typewriter">
-                    <h1> BORN TO INNOVATE</h1>
-                </div>
+                 <img src = "img/work.png">
             </header>
+
+
+            <div class="typewriter">
+                <h1> BORN TO INNOVATE</h1>
+            </div>
         </div>
     </body>
 </html>

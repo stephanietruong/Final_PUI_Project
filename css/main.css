@@ -54,7 +54,7 @@ section{
 .right h4{
     font-size: 3em;
     color: #000;
-    padding: 45% 7% 0 7%;
+    margin: 45% 7% 0 7%;
     color: #414141;
 }
 
@@ -276,6 +276,13 @@ body#contact .right p{
         color: #fff;
         display: inline-block;
         width: 100%;
+    }
+
+    body.loaded div.content div#mobileHeader div.typewriter{
+        display: flex;
+    }
+    h1{
+        font-size: 1.5em;
     }
 }
 

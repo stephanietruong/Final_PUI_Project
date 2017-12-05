@@ -295,6 +295,18 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
 
 
 /************************** RESPONSIVE SCREENS ********************************/
+        @media only screen and (max-width: 800px){
+        h1{
+            font-size: 2.5em;
+        }
+    }
+
+    @media only screen and (max-width: 650px){
+        h1{
+            font-size: 2em;
+        }
+    }
+ 
     @media only screen and (max-width: 499px) {
         .span_2_of_2, .span_1_of_2 { width: 100%; }
 
@@ -322,6 +334,14 @@ p{ font-family:Helvetica Neue, Arial, sans-serif;}
             padding: 5px;
             opacity: 1;
         }
+        h1{
+            font-size: 1.5em;
+        }
+
+        .typewriter {
+            margin-left: 15px;
+        }
     }
+
 
 /************************END OF RESPONSIVE SCREENS******************************/
