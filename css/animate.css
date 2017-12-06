@@ -1243,6 +1243,7 @@
 
 .jackInTheBox {
   animation-name: jackInTheBox;
+  animation-delay:1.5s;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */

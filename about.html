@@ -4,72 +4,125 @@
         <!-- CSS STYLESHEET-->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/test.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
+
         <!-- JAVASCRIPT-->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
+        <script src="js/pageTransition.js"></script>
+        <script src="http://cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
     </head>
 
-    <body id = "about" class = "testSize">
-        <div class="section group">
+    <body class = "testSize">
+        <div id="about-page">
+            <div class="about-content">
+                <div class="section group">
 
-            <!-- LEFT SIDE-->
-            <div class="col span_1_of_2">
-                <div class = "left">
-                    <div class = "mobile" onclick="openHome()">
-                        <a href = "index.html">
-                            <img src="img/homeIcon.png" class="homeIcon">                
-                            <h5> stephanie truong </h5>
-                        </a>
+                    <!-- LEFT SIDE-->
+                    <div class="col span_1_of_2">
+                        <div class = "left">
+                            <div class = "mobile" onclick="openHome()">
+                                <a href = "index.html">
+                                    <img src="img/homeIcon.png" class="homeIcon">                
+                                    <h5> stephanie truong </h5>
+                                </a>
+                            </div>
+                            <h3>about</h3>
+                        
+                            <div class="clear"></div>
+                        </div>
                     </div>
-                    <div class="typewriter2">
-                        <h3>about</h3>
-                    </div>
+
+                    <!-- CENTER IMAGE-->
+                    <img src="img/me.png" id="centerImg">
                     
-                    <div class="clear"></div>
-                </div>
-            </div>
+                    <!-- RIGHT SIDE OF PAGE WITH CONTENT-->
+                    <div class="col span_1_of_2">
+                        <div class = "right"> 
+                            <header>    
+                                <nav>
+                                    <a href="index.html"><h2> stephanie truong </h2></a>
+                                    <ul> 
+                                        <li><a href="about.html" id ="coloredOnNav"> about </a></li>
+                                        <li><a href="projects.html"> projects </a></li>
+                                        <li><a class="linkToContact"> contact </a></li>
+                                    </ul>
 
-            <!-- CENTER IMAGE-->
-            <img src="img/me.png" id="centerImg">
-            
-            <!-- RIGHT SIDE OF PAGE WITH CONTENT-->
-            <div class="col span_1_of_2">
-                <div class = "right"> 
-                    <header>    
-                        <nav>
-                            <a href="index.html"><h2> stephanie truong </h2></a>
-                            <ul> 
-                                <li><a href="about.html" id ="aboutNav"> about </a></li>
-                                <li><a href="projects.html"> projects </a></li>
-                                <li><a href="contact.html"> contact </a></li>
-                            </ul>
+                                    <div class="clear"></div>
+                                </nav>
+                            </header>   
+                       
+                            <h4 class="animated bounceInDown">stephanie truong</h4>
+                            <p>
+                                I am currently a senior at Carnegie Mellon University double majoring in Human Computer Interaction and Business Administration with a minor in Media Design. 
+                                <br><br>
+                                I love being able to apply design principles to everyday life. This summer, I was able to apply design thinking methodologies to uncover my clients’ underlying problems and co-create and co-ideate innovative solutions with them. I also conducted research on how to incorporate qualitative research such as consumer interviews to better understand quantitative analyses such as big data. I also worked with the data analytics team to create a data driven process for a consumer packaged goods' client to create a consumer-centric approach for growth. Therefore, after this summer, I am interested in pairing data analytics with design to uncover new opportunities for innovation. 
+                                <br><br>
+                                During my free time, I love to explore new places. Normally, you can find me at any coffee shop, working and sipping on a hot cup of latte. Therefore, feel free to connect with me and we can go get coffee together! 
+                                <br><br>
+                                Connect with me on Linkedin!
+                            </p>
 
                             <div class="clear"></div>
-                        </nav>
-                    </header>   
-               
-                    <h4 class="animated bounceInDown">stephanie truong</h4>
-                    <p>
-                        I am currently a senior at Carnegie Mellon University double majoring in Human Computer Interaction and Business Administration with a minor in Media Design. 
-                        <br><br>
-                        I love being able to apply design principles to everyday life. This summer, I was able to apply design thinking methodologies to uncover my clients’ underlying problems and co-create and co-ideate innovative solutions with them. I also conducted research on how to incorporate qualitative research such as consumer interviews to better understand quantitative analyses such as big data. I also worked with the data analytics team to create a data driven process for a consumer packaged goods' client to create a consumer-centric approach for growth. Therefore, after this summer, I am interested in pairing data analytics with design to uncover new opportunities for innovation. 
-                        <br><br>
-                        During my free time, I love to explore new places. Normally, you can find me at any coffee shop, working and sipping on a hot cup of latte. Therefore, feel free to connect with me and we can go get coffee together! 
-                        <br><br>
-                        Connect with me on Linkedin!
-                    </p>
+                        </div>
+                    </div>
 
                     <div class="clear"></div>
                 </div>
+                <div class="clear"></div>   
             </div>
-
-            <div class="clear"></div>
         </div>
-        <div class="clear"></div>   
+
+        <div id = "contact-page">
+            <div class="contact-content">
+                <div class="section group">
+                    <!-- LEFT SIDE-->
+                    <div class="col span_1_of_2">
+                        <div class = "left" id="contactLEFT">
+                            <div class = "mobile" onclick="openHome()">
+                                <a href = "index.html">
+                                    <img src="img/homeIcon.png" class="homeIcon">
+                                    <h5> stephanie truong </h5>
+                                </a>
+                            </div>
+                            
+                            <h3>contact</h3>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- RIGHT SIDE OF PAGE WITH CONTENT-->
+                    <div class="col span_1_of_2">
+                        <div class = "right"> 
+                            <header>    
+                                <nav>
+                                    <a href="index.html"><h2> stephanie truong </h2></a>
+                                    <ul> 
+                                        <li><a class="linkToAbout"> about </a></li>
+                                        <li><a href="projects.html"> projects </a></li>
+                                        <li><a href="contact.html" id ="coloredOnNav"> contact</a></li>
+                                    </ul>
+
+                                    <div class="clear"></div>
+                                </nav>
+                            </header>   
+                       
+                          
+                            <p class ="animated jackInTheBox">
+                               Let me know if you want to collaborate or connect!
+                            </p>
+                            <div id="iconConnect">
+                                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=struong@andrew.cmu.edu" target="_blank"><img src="img/email.png"></a>
+                                <a href="https://www.linkedin.com/in/stephanietruong17/"target="_blank" ><img src="img/linkedin.png"></a>
+                                <a href = "https://github.com/stephanietruong/" target="_blank"><img src="img/git.png"></a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div> 
+            </div>  
+        </div>
     </body>
 </html>

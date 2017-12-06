@@ -33,7 +33,7 @@ $(document).ready(function() {
 	setTimeout(function(){
 		document.getElementsByClassName('typewriter')[0].style.display = "flex";
 
-	}, 4510);
+	}, 4800);
 
 	//check if this is a mobile view
 	checkMobile();
