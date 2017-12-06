@@ -1502,7 +1502,26 @@
 
 .slideInRight {
   animation-name: slideInRight;
+  animation-duration: 0.15s;
+  animation-delay: 0.1s;
 }
+
+@keyframes slideInRight2 {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight2 {
+  animation-name: slideInRight;
+  animation-duration: 0.4s;
+}
+
 
 @keyframes slideInUp {
   from {

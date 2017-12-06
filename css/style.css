@@ -598,6 +598,23 @@ body#contact div.section{
             width: 100%;
         }
 
+        body#contact header nav{
+            display: none;
+        }
+        body#contact .right p{
+            margin-top:100px;
+        }
+
+        div#about-page header nav{
+            display: none;
+        }
+
+        div#contact-page header nav{
+            display: none;
+        }
+        div#contact-page.right p{
+            margin-top:100px;
+        }
     }
 
 

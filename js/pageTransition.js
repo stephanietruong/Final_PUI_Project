@@ -1,6 +1,5 @@
-/* JQUERY CODES
--------------------------------------------------*/
 
+/* Modify from https://designmodo.com/create-full-page-animation/*/
 $(document).ready(function() {
 
 	$.fn.animateRotate = function(angle, duration, easing, complete) {
