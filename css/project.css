@@ -159,11 +159,16 @@ div.row img{
     body#project .mobile a{
         width: 50%;
     }
-    #projectContactPage {
+
+  
+    body#project .mobile a#projectContactPage {
+        width: 30%;
         position: static;
         float: right;
-        font-size: 1em;
-        width: 25%
+        font-size: .7em;
+        text-align: right;
+        padding-right: 30px;
+        padding-top: .1em;
     }
 }
 /***********************END OF RESPONSIVE SCREENS ************************/

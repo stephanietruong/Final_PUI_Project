@@ -550,7 +550,7 @@ body#contact div.section{
         }
 
         #about-page img#centerImg{
-            margin-top: 231px;
+            margin-top: 100px;
         }
 
         .right {
@@ -564,8 +564,9 @@ body#contact div.section{
         .right h4{
             font-size: 1.5em;
             padding-top: 0%;
-            padding: 100px 0 20px 0;
+            padding: 0px 0 20px 0;
             text-align: center;
+            margin-top: 115px;
         }
         .right p{
             padding: 0;
@@ -595,7 +596,18 @@ body#contact div.section{
         .mobile a{
             color: #fff;
             display: inline-block;
-            width: 100%;
+            width: 50%;
+        }
+
+        .mobile ul#mobileUL{
+            float: right;
+            padding-right: 10px;
+          
+        }
+        .mobile ul#mobileUL li{
+            display: inline-block;
+            font-size: 0.8em;
+            padding-right: 20px;
         }
 
         body#contact header nav{
