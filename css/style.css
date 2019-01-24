@@ -8,6 +8,8 @@ body {
 }
 
 
+
+
 p{ font-family:Helvetica Neue, Arial, sans-serif;}
 
 a {
@@ -196,6 +198,7 @@ body {
   display: none;
 }
 
+
 .typewriter h1{
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -205,23 +208,27 @@ body {
   margin-left: 15px;
   letter-spacing: .1em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 1.5s steps(30, end),
     blink-caret .5s step-end 1;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0}
-  to { width: 570px}
+  to { width: 330px}
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/*@keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
-  100%{ border-color: transparent;}
 }
+*/
 
+
+.welcome h1{
+    color: #fff;
+}
 /************************ TEXT TRANSITIONS *******************/
 
 /******************************* HOMEPAGE  *************************************/
@@ -275,7 +282,6 @@ body {
         font-size: 1em;
         color: #ffffff;
     }
-
 
 /******************************* END OF HOMEPAGE  *************************************/
 

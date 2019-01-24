@@ -37,7 +37,6 @@ $(document).ready(function() {
 	//Start the animation for the "Born to Innovate" tag line
 	setTimeout(function(){
 		document.getElementsByClassName('typewriter')[0].style.display = "flex";
-
 	}, 4800);
 
 	//check if this is a mobile view
@@ -65,13 +64,14 @@ function changeForMobileMenu(x){
 	}
 }
 
+// Hiding Animations
 // Change to the individual project page
 function projectClick(){
 	var target = event.target || event.srcElement;
 	var id = target.id;
 	var targetRow = document.getElementById(id);
 	$(targetRow).removeClass('animated fadeInDown');
-	$(targetRow).addClass('animated slideOutLeft');
+	$(targetRow).addClass('animated bounceOutLeft');
 
 	setTimeout(function(){
 		
