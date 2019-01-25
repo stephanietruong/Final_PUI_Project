@@ -8,8 +8,6 @@ body {
 }
 
 
-
-
 p{ font-family:Helvetica Neue, Arial, sans-serif;}
 
 a {
@@ -83,16 +81,10 @@ body#home{
     }
 
     /* This is the container surrounding my svg*/
-    #mySvg{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        cursor: default;
-        pointer-events: none;
-        top: 0;
+    .loader{
         height: 100%;
     }
+
 
     #hiddenAfter{
         display: none;
@@ -138,6 +130,25 @@ body#home{
 
     /************ ANIMATION FOR THE PRELOAD SCREEN ***********/
         /* Path for SVG for one time*/
+
+        #mySvg{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            cursor: default;
+            pointer-events: none;
+            top: 0;
+            height: 100%;
+        }
+
+        #mySvg #svg_inner{
+            display: block;
+            min-width: 700px;
+            width: 100%;
+            height: 100%;
+
+        }
+
         .path2{
             stroke-miterlimit:5; 
             stroke-dasharray: 1400; 
@@ -163,7 +174,7 @@ body#home{
             stroke-dasharray: 300;
             stroke-dashoffset: 0;
             animation: dash 4s linear alternate infinite;
-            margin: 40% 0 0 40%;
+            margin: 0;
         }
 
         @keyframes dash {
@@ -174,15 +185,9 @@ body#home{
             stroke-dashoffset: 0;
           }
         }
-
+    
     /******* END OF ANIMATION FOR THE PRELOAD SCREEN**/
-        #mySvg #svg_inner{
-            display: block;
-            margin: 0 auto;
-            min-width: 320px;
-            max-width: 480px;
-            width: 25%;
-        }
+
 
 /************************ END OF PRELOAD SCREEN ******************************/
 
@@ -456,6 +461,7 @@ body#contact div.section{
 
 /************************** RESPONSIVE SCREENS ********************************/
 
+
     @media only screen and (max-width: 1000px) {
         body{
             overflow: auto;
@@ -481,11 +487,17 @@ body#contact div.section{
         }
 
     }
+
     
     @media only screen and (max-width: 650px){
         h1{
             font-size: 2em;
         }
+        #mySvg #svg_inner{
+            width: 100%;
+            height: 100%;
+        }
+
     }
     
     /* Turn from normal header to mobile header*/
@@ -526,6 +538,9 @@ body#contact div.section{
 
         .typewriter {
             margin-left: 15px;
+        }
+        #mySvg #svg_inner{
+            margin-left: -10%;
         }
     }
 
@@ -634,6 +649,49 @@ body#contact div.section{
             margin-top:100px;
         }
     }
+
+    @media only screen and (max-width: 500px){
+        #mySvg #svg_inner{
+            margin-left: -40%;
+          
+        }
+
+    }
+
+            @media only screen and (max-width: 320px){
+        #mySvg #svg_inner{
+            margin-left: -47%;
+         
+        }
+
+    }
+
+/*
+
+    @media only screen and (min-height: 400px){
+        #mySvg #svg_inner{
+            margin-top: 20%;
+        }
+
+    }
+   @media only screen and (min-height: 550px){
+        #mySvg #svg_inner{
+            margin-top: 40%;
+        }
+
+    }*/
+    
+
+     @media only screen and (min-width: 800px) and (min-height: 600px){
+        #mySvg #svg_inner{
+            margin-top: 0%;
+        }
+
+    }
+
+
+
+
 
 
 /****************************** RESPONSIVE GRID ******************************/

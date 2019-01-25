@@ -29,10 +29,10 @@ function checkMobile(){
 $(document).ready(function() {
 
 	//This is the preload screen (set with timer because not enought things to load)
-	setTimeout(function(){
-		document.getElementById('hiddenAfter').style.display = "block";
-		$('body').addClass('loaded');
-	}, 3010);
+	// setTimeout(function(){
+	// 	document.getElementById('hiddenAfter').style.display = "block";
+	// 	$('body').addClass('loaded');
+	// }, 3010);
 
 	//Start the animation for the "Born to Innovate" tag line
 	setTimeout(function(){
@@ -186,3 +186,26 @@ $(window).resize(function() {
 	checkSize();
 	checkMobile();
 });
+
+
+// // Resize SVG animation to be responsive. Help from https://codepen.io/sdras/pen/xbyopy
+// var shape = document.getElementById("svg_inner");
+
+// // media query event handler
+// if (matchMedia) {
+// 	var mq = window.matchMedia("(min-width: 500px)");
+// 	mq.addListener(WidthChange);
+// 	WidthChange(mq);
+
+// }
+// // media query change
+// function WidthChange(mq) {
+// 	if (mq.matches) {
+//     shape.setAttribute("viewBox", "0 0 490 474");
+//     shape.setAttribute("enable-background", "0 0 490 474");
+// 	}
+// 	else {
+//     shape.setAttribute("viewBox", "0 490 500 500");
+//     shape.setAttribute("enable-background", "0 490 500 500");
+// 	}
+// };
