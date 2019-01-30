@@ -703,3 +703,16 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #e42d9f;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  #about .container{
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  #about .container{
+    width: 75%;
+  }
+}
