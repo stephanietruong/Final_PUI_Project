@@ -79,6 +79,10 @@ div#policyMakerText h6{
 	color: #104d62;
 }
 
+#heboFlow{
+	width: 99%;
+}
+
 /* Dashboard Specific*/
 
 #diffSize{
