@@ -65,7 +65,9 @@ section h3.section-subheading {
 #closeBtn{
   background-color: #f44842;
 }
-
+#trustytechIMG{
+  max-height: 400px;
+}
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
