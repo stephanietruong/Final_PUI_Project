@@ -1,6 +1,7 @@
 section{
 	width: 60%;
 	margin-left: 20%;
+	padding-bottom: 0;
 }
 
 strong{
@@ -36,6 +37,8 @@ p{
 
 ul{
 	list-style-type: none;
+	padding-left: 25px;
+	margin-left: 25px;
 
 }
 
@@ -44,6 +47,23 @@ li{
 	font-weight: 300;
 	font-family: 'Open+Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+/* Dashed Lists */
+
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  	margin-left: 0;
+    /*padding-left: 1em;*/
+}
+ul.dashed > li:before {
+  content: "-";
+  margin-left: -.8em;
+}
+
+/* End of Dashed Lists */
 
 /* Dashboard Specific*/
 div#scientist img{
@@ -79,8 +99,63 @@ div#policyMakerText h6{
 	color: #104d62;
 }
 
-#heboFlow{
+.projectPic{
 	width: 99%;
+}
+
+.left{
+	float: left;
+	width: 10%;
+	padding-left:10%;
+	margin-left: 0;
+	padding-top:40%;
+}
+
+
+
+.right{
+	float: right;
+	margin-right: 10%;
+	width: 70%;
+	margin-left: 0;
+}
+
+div.animated{
+	padding: 10px;
+	margin: 0%;
+}
+.animated .fadeInLeft {
+	margin: 0%;
+	padding: 0;
+}
+#aboutImg{
+	max-width: 100px;
+}
+
+#aboutProject{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.aboutFS{
+	position: absolute;
+	left:calc(10% - 42.5px);
+}
+
+#aboutImg{
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	padding-left: 0;
+	position: relative;
+	top:-25px;
+}
+
+#line{
+	position: absolute;
+	left:calc(10% + 40px);
+	height:100%;
+	width: 15px;
 }
 
 /* Dashboard Specific*/
@@ -88,6 +163,25 @@ div#policyMakerText h6{
 #diffSize{
 	width: 110%;
 }
+
+@media (max-width: 800px){
+
+	#aboutImg{
+		max-width: 80px;
+	}
+
+	#line{
+		position: absolute;
+		left:calc(10% + 30px);
+	}
+
+	section{
+		width: 65%;
+		margin-left: 22%;
+		margin-right: 10%;
+	}
+}
+
 
 @media (max-width: 671px){
 	div#scientist img{
@@ -120,5 +214,21 @@ div#policyMakerText h6{
 	}
 }
 
+@media (max-width: 500px){
+
+	#aboutImg{
+		display: none;
+	}
+
+	#line{
+		display: none;
+	}
+
+	section{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
 
 
