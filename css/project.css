@@ -1,3 +1,4 @@
+.clear{clear: both;}
 section{
 	width: 60%;
 	margin-left: 20%;
@@ -160,9 +161,59 @@ div.animated{
 
 /* Dashboard Specific*/
 
-#diffSize{
+#diffSize1{
+	width: 100%;
+}
+
+.diffSize2{
+	width: 80%;
+	height: 70%;
+}
+
+/* End of Dashboard Specific*/
+
+/*Controls Redesign*/
+#leftControls{
+	float: left;
+	width: 45%;
+}
+
+#rightControls{
+	float: right;
+	padding-top:5%;
+	width: 50%;
+}
+
+#blindsBreakdown{
 	width: 110%;
 }
+
+.controlPics{
+	max-height: 200px;
+}
+
+#floatLeft1{
+	float: left;
+	width: 70%;
+}
+
+#floatRight1{
+	float: right;
+	width: 30%;
+	padding-left: 25px;
+}
+
+#floatLeft2{
+	float: left;
+	width: 50%;
+}
+
+#floatRight2{
+	float: right;
+	width: 50%;
+	
+}
+/* End of Controls Redesign*/
 
 @media (max-width: 800px){
 
@@ -179,6 +230,22 @@ div.animated{
 		width: 65%;
 		margin-left: 22%;
 		margin-right: 10%;
+	}
+	#leftControls{
+		float: none;
+		width:100%;
+	}
+
+	#rightControls{
+		float: none;
+		padding-top:0%;
+		width: 100%;
+	}
+	#blindsBreakdown{
+		width: 90%;
+		text-align: center;
+		margin: 0 5%;
+		margin-bottom: 20px;
 	}
 }
 
