@@ -238,7 +238,7 @@ $(window).resize(function() {
        if (document.getElementById("test")){
 	       if (this.parentElement.parentElement.parentElement.id !="test"){
 		      	var sizeOfDiv = this.parentElement.parentElement.parentElement.offsetHeight;
-		      	console.log("div size",sizeOfDiv);
+		      	// console.log("div size",sizeOfDiv);
 		      	if (previousDivSize.indexOf(sizeOfDiv) < 0){
 		      		previousDivSize.push(sizeOfDiv);
 		      		sizeOfLine = sizeOfLine + sizeOfDiv;
@@ -288,45 +288,12 @@ $(window).resize(function() {
   // END OF SCROLL ANIMATIONS//
 
 
-  // STEPH SCROLL ANIMATION
- $(document).ready(function() {
- 	// var scrollTop = $(window).scrollTop();
-
- 	// var projectHeaderHeight= document.getElementById('projectHeader').clientHeight;
- 	// //console.log ("projectHeader Height",projectHeaderHeight);
-
- 	// var aboutHeight= document.getElementById('about').offsetHeight;
- 	// //console.log ("about's Height",aboutHeight);
-
- 	// elementOffset = $('#about').offset().top;
-  //   aboutDistance = (elementOffset - scrollTop);
-
- 	//console.log ("aboutLoc",aboutDistance);
-
- 	// var empathizeHeight= document.getElementById('empathize').clientHeight;
- 	// console.log ("empathizeHeight",empathizeHeight);
-
- 	// var empathizeLoc= document.getElementById('empathize').top();
- 	// console.log ("empathizeLoc",empathizeLoc);
- 	
-
-
- 	// var defineHeight= document.getElementById('define').offsetHeight;
- 	// console.log ("defineHeight",defineHeight);
-
- 	// var ideateHeight= document.getElementById('ideate').offsetHeight;
- 	// console.log ("ideateHeight",ideateHeight);
-
- 	// var prototypeHeight= document.getElementById('prototype').offsetHeight;
- 	// console.log ("prototypeHeight",prototypeHeight);
-
- 	// var testHeight= document.getElementById('test').offsetHeight;
- 	//console.log ("testHeight",testHeight);
-
- 	//Make the line size of the container
-
-
-
-});
-  // END OF STEPH SCROLL ANIMATE
+//   // STEPH SCROLL ANIMATION
+// $(window).resize(function () {
+// 	var lineHeight =  document.getElementById('line').style.height;
+// 	var sectionHeight = $("section").height() - document.getElementById('test').style.height ;
+// 	document.getElementById('line').style.height = sectionHeight;
+	
+// });
+//   // END OF STEPH SCROLL ANIMATE
 
