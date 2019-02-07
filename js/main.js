@@ -216,6 +216,7 @@ $(window).resize(function() {
 
   // Check if element is scrolled into view
   function isScrolledIntoView(elem) {
+  	console.log("scroll",window.pageYOffset);
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height() - 100;
 
@@ -232,15 +233,21 @@ $(window).resize(function() {
   // If element is scrolled into view, fade it in
   $(window).scroll(function() {
     $('.scroll-animations .animated').each(function() {
-      
+
+
 
        if (document.getElementById("test")){
 	       if (this.parentElement.parentElement.parentElement.id !="test"){
 		      	var sizeOfDiv = this.parentElement.parentElement.parentElement.offsetHeight;
 		      	// console.log("div size",sizeOfDiv);
-		      	if (previousDivSize.indexOf(sizeOfDiv) < 0){
+		      		if (window.pageYOffset < document.getElementById('section1').style.height){
+			      		sizeOfLine= window.pageYOffset;
+			      	}
+			      	
+		      	else if(previousDivSize.indexOf(sizeOfDiv) < 0){
 		      		previousDivSize.push(sizeOfDiv);
 		      		sizeOfLine = sizeOfLine + sizeOfDiv;
+
 		      	}
 	      	}
 		}
@@ -248,7 +255,11 @@ $(window).resize(function() {
 			if (this.parentElement.parentElement.parentElement.id !="prototype"){
 			      	var sizeOfDiv = this.parentElement.parentElement.parentElement.offsetHeight;
 			      	console.log("div size",sizeOfDiv);
-			      	if (previousDivSize.indexOf(sizeOfDiv) < 0){
+			      	if (window.pageYOffset < document.getElementById('section1').style.height){
+			      		sizeOfLine= window.pageYOffset;
+			      	}
+			      	
+			      	else if (previousDivSize.indexOf(sizeOfDiv) < 0){
 			      		previousDivSize.push(sizeOfDiv);
 			      		sizeOfLine = sizeOfLine + sizeOfDiv;
 			      	}
@@ -258,6 +269,8 @@ $(window).resize(function() {
       //	console.log(sizeOfLine);
       	// for(var i=0;i<previousDivSize.length;i++){
        //  	if(previousDivSize[i]===sizeOfDiv){return true;}}
+
+       
       	document.getElementById('line').style.height = sizeOfLine + 50 +'px';
       	if (isScrolledIntoView(this) === true) {
         $(this).addClass('fadeInLeft');
@@ -281,6 +294,7 @@ $(window).resize(function() {
         document.getElementById('line').style.height = aboutHeight + 50 +'px';
 
         var lineHeight = document.getElementById('line').offsetHeight;
+        document.getElementById('line').style.height = window.pageYOffset +50;
         //console.log ("line Height",lineHeight);
       }
     });
