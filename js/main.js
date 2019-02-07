@@ -240,11 +240,11 @@ $(window).resize(function() {
 	       if (this.parentElement.parentElement.parentElement.id !="test"){
 		      	var sizeOfDiv = this.parentElement.parentElement.parentElement.offsetHeight;
 		      	// console.log("div size",sizeOfDiv);
-		      		if (window.pageYOffset < document.getElementById('section1').style.height){
-			      		sizeOfLine= window.pageYOffset;
-			      	}
+// 		      		if (window.pageYOffset < document.getElementById('section1').style.height){
+// 			      		sizeOfLine= window.pageYOffset;
+// 			      	}
 			      	
-		      	else if(previousDivSize.indexOf(sizeOfDiv) < 0){
+		      	if(previousDivSize.indexOf(sizeOfDiv) < 0){
 		      		previousDivSize.push(sizeOfDiv);
 		      		sizeOfLine = sizeOfLine + sizeOfDiv;
 
@@ -254,12 +254,7 @@ $(window).resize(function() {
 		else{
 			if (this.parentElement.parentElement.parentElement.id !="prototype"){
 			      	var sizeOfDiv = this.parentElement.parentElement.parentElement.offsetHeight;
-			      	console.log("div size",sizeOfDiv);
-			      	if (window.pageYOffset < document.getElementById('section1').style.height){
-			      		sizeOfLine= window.pageYOffset;
-			      	}
-			      	
-			      	else if (previousDivSize.indexOf(sizeOfDiv) < 0){
+			      	if (previousDivSize.indexOf(sizeOfDiv) < 0){
 			      		previousDivSize.push(sizeOfDiv);
 			      		sizeOfLine = sizeOfLine + sizeOfDiv;
 			      	}
