@@ -217,7 +217,7 @@ $(window).resize(function() {
   // Check if element is scrolled into view
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+    var docViewBottom = docViewTop + $(window).height() - 100;
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
@@ -232,8 +232,7 @@ $(window).resize(function() {
   // If element is scrolled into view, fade it in
   $(window).scroll(function() {
     $('.scroll-animations .animated').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInLeft');
+      
 
        if (document.getElementById("test")){
 	       if (this.parentElement.parentElement.parentElement.id !="test"){
@@ -260,6 +259,8 @@ $(window).resize(function() {
       	// for(var i=0;i<previousDivSize.length;i++){
        //  	if(previousDivSize[i]===sizeOfDiv){return true;}}
       	document.getElementById('line').style.height = sizeOfLine + 50 +'px';
+      	if (isScrolledIntoView(this) === true) {
+        $(this).addClass('fadeInLeft');
       }
     });
 
