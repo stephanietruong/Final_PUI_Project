@@ -211,6 +211,9 @@ $(window).resize(function() {
 // };
 
 
+
+
+
 // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
   $(document).ready(function() {
 
@@ -236,16 +239,16 @@ $(window).resize(function() {
         D.body.scrollHeight, D.documentElement.scrollHeight,
         D.body.offsetHeight, D.documentElement.offsetHeight,
         D.body.clientHeight, D.documentElement.clientHeight
-    )
-}
- 
+    	)
+	}
+	 
 	var docheight = getDocHeight()
 
-  // If element is scrolled into view, fade it in
+  //If element is scrolled into view, fade it in
   $(window).scroll(function() {
     $('.scroll-animations .animated').each(function() {
 
-
+   
 
        if (document.getElementById("test")){
 	       if (this.parentElement.parentElement.parentElement.id !="test"){
@@ -288,28 +291,28 @@ $(window).resize(function() {
     });
 
   // $(window).scroll(function() {
-  //   $('.scroll-animations .animatedU').each(function() {
-  //     if (isScrolledIntoView(this) === true) {
-  //       $(this).addClass('fadeInUp');
-  //     }
+    $('.scroll-animations .animatedU').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('fadeInUp');
+      }
   //   });
-  //  });
-//   });
+   });
 
-  // $(window).scroll(function() {
-  //   $('#line').each(function() {
-  //     if (isScrolledIntoView(this) === true) {
-  //     	var aboutHeight= document.getElementById('about').offsetHeight;
-  //     	//console.log ("about's Height",aboutHeight);
-  //       document.getElementById('line').style.height = docheight;
 
-  //       var lineHeight = document.getElementById('line').offsetHeight;
-  //       document.getElementById('line').style.height = docheight;
-  //       console.log ("line Height",lineHeight);
-  //     }
-  //   });
-  //  });
-});
+  $(window).scroll(function() {
+    $('#line').each(function() {
+      if (isScrolledIntoView(this) === true) {
+      	var aboutHeight= document.getElementById('about').offsetHeight;
+      	//console.log ("about's Height",aboutHeight);
+        document.getElementById('line').style.height = docheight;
+
+        var lineHeight = document.getElementById('line').offsetHeight;
+        document.getElementById('line').style.height = docheight;
+        console.log ("line Height",lineHeight);
+      }
+    });
+   });
+   });
   // END OF SCROLL ANIMATIONS//
 
 
