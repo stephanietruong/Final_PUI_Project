@@ -216,7 +216,7 @@ $(window).resize(function() {
 
   // Check if element is scrolled into view
   function isScrolledIntoView(elem) {
-  	console.log("scroll",window.pageYOffset);
+  	// console.log("scroll",window.pageYOffset);
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height() - 100;
 
@@ -229,6 +229,17 @@ $(window).resize(function() {
 
   var sizeOfLine = 0;
   var previousDivSize = [];
+
+  function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
+}
+ 
+	var docheight = getDocHeight()
 
   // If element is scrolled into view, fade it in
   $(window).scroll(function() {
@@ -265,11 +276,15 @@ $(window).resize(function() {
       	// for(var i=0;i<previousDivSize.length;i++){
        //  	if(previousDivSize[i]===sizeOfDiv){return true;}}
 
-       
-      	document.getElementById('line').style.height = sizeOfLine + 50 +'px';
+       	var navHeight = document.getElementsByClassName("projectHeader")[0].offsetHeight;
+       	var headerHeight = document.getElementById('mainNav').offsetHeight;
+      	document.getElementById('line').style.height = docheight - headerHeight - navHeight + "px";
+      	console.log("print"+ docheight)
+      	console.log ("l" + navHeight )
       	if (isScrolledIntoView(this) === true) {
         $(this).addClass('fadeInLeft');
-      }
+      	}
+  	})
     });
 
   // $(window).scroll(function() {
@@ -279,21 +294,21 @@ $(window).resize(function() {
   //     }
   //   });
   //  });
-  });
+//   });
 
-  $(window).scroll(function() {
-    $('#line').each(function() {
-      if (isScrolledIntoView(this) === true) {
-      	var aboutHeight= document.getElementById('about').offsetHeight;
-      	//console.log ("about's Height",aboutHeight);
-        document.getElementById('line').style.height = aboutHeight + 50 +'px';
+  // $(window).scroll(function() {
+  //   $('#line').each(function() {
+  //     if (isScrolledIntoView(this) === true) {
+  //     	var aboutHeight= document.getElementById('about').offsetHeight;
+  //     	//console.log ("about's Height",aboutHeight);
+  //       document.getElementById('line').style.height = docheight;
 
-        var lineHeight = document.getElementById('line').offsetHeight;
-        document.getElementById('line').style.height = window.pageYOffset +50;
-        //console.log ("line Height",lineHeight);
-      }
-    });
-   });
+  //       var lineHeight = document.getElementById('line').offsetHeight;
+  //       document.getElementById('line').style.height = docheight;
+  //       console.log ("line Height",lineHeight);
+  //     }
+  //   });
+  //  });
 });
   // END OF SCROLL ANIMATIONS//
 
