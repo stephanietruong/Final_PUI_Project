@@ -3,7 +3,7 @@ function checkSize(){
     $(".left").height($(".right").height());
 	$('.left').css('min-height',($(".right").height()));
 	if ($(this).width() < 499){
-		console.log("her");
+		// console.log("her");
 	 	$(".left").height(
 	 		'150px');
 	 	$('.left').css('min-height', '150px');
@@ -282,8 +282,8 @@ $(window).resize(function() {
        	var navHeight = document.getElementsByClassName("projectHeader")[0].offsetHeight;
        	var headerHeight = document.getElementById('mainNav').offsetHeight;
       	document.getElementById('line').style.height = docheight - headerHeight - navHeight + "px";
-      	console.log("print"+ docheight)
-      	console.log ("l" + navHeight )
+      	// console.log("print"+ docheight)
+      	// console.log ("l" + navHeight )
       	if (isScrolledIntoView(this) === true) {
         $(this).addClass('fadeInLeft');
       	}
@@ -308,7 +308,7 @@ $(window).resize(function() {
 
         var lineHeight = document.getElementById('line').offsetHeight;
         document.getElementById('line').style.height = docheight;
-        console.log ("line Height",lineHeight);
+        //console.log ("line Height",lineHeight);
       }
     });
    });
