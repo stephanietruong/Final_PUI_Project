@@ -232,8 +232,9 @@ $(window).resize(function() {
 
   var sizeOfLine = 0;
   var previousDivSize = [];
+  var docheight =0;
 
-  function getDocHeight() {
+ 	function getDocHeight() {
     var D = document;
     return Math.max(
         D.body.scrollHeight, D.documentElement.scrollHeight,
@@ -241,8 +242,11 @@ $(window).resize(function() {
         D.body.clientHeight, D.documentElement.clientHeight
     	)
 	}
-	 
-	var docheight = getDocHeight()
+	
+
+	var docheight = getDocHeight();	
+	
+	
 
   //If element is scrolled into view, fade it in
   $(window).scroll(function() {
