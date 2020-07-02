@@ -34,7 +34,7 @@ h6{
 
 p{
 	font-weight: 300;
-	font-size: 0.9em;
+	font-size: 1.0em;
 	 font-weight: 300;
 }
 
@@ -46,7 +46,7 @@ ul{
 }
 
 li{
-	font-size: 0.9em;
+	font-size: 1.0em;
 	font-weight: 300;
 	font-family: 'Open+Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	margin-bottom: .5em;
@@ -121,6 +121,11 @@ div#policyMakerText h6{
 	width: 99%;
 }
 
+.projectPic2{
+/*	max-height: 400px;*/
+width: 50%;
+}
+
 .left{
 	float: left;
 	width: 10%;
@@ -192,13 +197,13 @@ div.animated{
 /*Controls Redesign*/
 #leftControls{
 	float: left;
-	width: 45%;
+	width: 50%;
 }
 
 #rightControls{
 	float: right;
 	padding-top:5%;
-	width: 50%;
+	width: 45%;
 }
 
 #blindsBreakdown{
@@ -291,6 +296,8 @@ div.animated{
 		display: block;
 		margin-bottom:20px;
 	}
+	.projectPic2{
+	display: none;
 }
 @media (max-width: 671px){
 	div#scientist img{
@@ -333,6 +340,8 @@ div.animated{
 	#Alyssa{
 		display: block;
 	}
+	.projectPic2{
+	display: none;
 }
 
 @media (max-width: 500px){
@@ -350,6 +359,10 @@ div.animated{
 		margin-left: 15%;
 		margin-right: 15%;
 	}
+	.projectPic2{
+	display: none;
 }
+}
+
 
 
