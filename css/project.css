@@ -184,12 +184,12 @@ div.animated{
 	top:-25px;
 }
 
-#line{
+#/*line{
 	position: absolute;
 	left:calc(10% + 40px);
 	height:100%;
 	width: 15px;
-}
+}*/
 
 /* Dashboard Specific*/
 
@@ -262,11 +262,11 @@ div.animated{
 	#aboutImg{
 		max-width: 80px;
 	}
-
+/*
 	#line{
 		position: absolute;
 		left:calc(10% + 30px);
-	}
+	}*/
 
 	section{
 		width: 65%;

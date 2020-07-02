@@ -222,7 +222,7 @@ $(window).resize(function() {
   	// console.log("scroll",window.pageYOffset);
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height() - 100;
-    var docHeight = $(document).outerHeight(true);
+    // var docHeight = $(document).outerHeight(true);
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
@@ -309,10 +309,12 @@ $(window).resize(function() {
       if (isScrolledIntoView(this) === true) {
       	var aboutHeight= document.getElementById('about').offsetHeight;
       	//console.log ("about's Height",aboutHeight);
-        document.getElementById('line').style.height = docheight;
+        // document.getElementById('line').style.height = docheight;
+        document.getElementById('line').style.height = 0;
 
         var lineHeight = document.getElementById('line').offsetHeight;
-        document.getElementById('line').style.height = docheight;
+        document.getElementById('line').style.height = 0;
+        // document.getElementById('line').style.height = docheight;
         //console.log ("line Height",lineHeight);
       }
     });
