@@ -222,6 +222,7 @@ $(window).resize(function() {
   	// console.log("scroll",window.pageYOffset);
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height() - 100;
+    var docHeight = $(document).outerHeight(true);
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
