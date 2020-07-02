@@ -52,6 +52,16 @@ li{
 	margin-bottom: .5em;
 }
 
+h3.topheader{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*color: #e42d9f;*/
+	color: #f589cc;
+	font-weight: 400;
+	letter-spacing: .5rem;
+	font-size: 1.5em;
+
+}
 
 /* Dashed Lists */
 
