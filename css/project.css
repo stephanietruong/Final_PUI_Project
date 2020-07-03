@@ -54,12 +54,10 @@ li{
 
 h3.topheader{
 	margin-top: 20px;
-	margin-bottom: 20px;
-	/*color: #e42d9f;*/
-	color: #f589cc;
-	font-weight: 400;
-	letter-spacing: .5rem;
-	font-size: 1.5em;
+	margin-bottom: 25px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	font-size: 2em;
 
 }
 
@@ -171,8 +169,12 @@ div.animated{
 }
 
 .aboutFS{
+/*	position: absolute;
+  	left: 30px;*/
 	position: absolute;
-	left:calc(10% - 42.5px);
+	float: right;
+	left:calc(10% - 70px);
+	/*text-align: left;*/
 }
 
 #aboutImg{
@@ -198,7 +200,8 @@ div.animated{
 }
 
 #diffSize2{
-	width: 80%;
+	width: 50%;
+	max-width: 500px;
 	height: 70%;
 }
 
