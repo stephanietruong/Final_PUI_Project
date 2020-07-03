@@ -386,6 +386,16 @@ div.animated{
 	.projectPic2{
 	display: none;
 }
+	#diffSize1{
+	width: 100%;
+	max-width: 400px;
+	height: 70%;
+}
+
+	#diffSize2{
+	max-width: 400px;
+	height: 70%;
+}
 }
 
 
