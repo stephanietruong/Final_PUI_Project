@@ -320,6 +320,10 @@ div.animated{
 	p{
 		font-size: .9em;
 	}
+
+	 ul.dashed li{
+            font-size: .9em;
+        }
 	#leftControls{
 		float: none;
 		width:100%;

@@ -486,9 +486,6 @@ body#contact div.section{
             font-size: .8em;
         }
 
-        li{
-            font-size: .8em;
-        }
 
     }
 
@@ -598,6 +595,10 @@ body#contact div.section{
             margin: 10px 10%;
         }
 
+        ul.dashed li{
+            font-size: .9em;
+        }
+
         
 
         /** SHOW MOBILE **/
@@ -651,6 +652,10 @@ body#contact div.section{
         }
         div#contact-page.right p{
             margin-top:100px;
+        }
+
+        li {
+            font-size: .9em;
         }
     }
 
