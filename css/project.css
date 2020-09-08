@@ -260,6 +260,18 @@ div.animated{
 	width: 45%;
 }
 
+#leftHebo{
+	float: left;
+	width: 40%;
+}
+
+#rightHebo{
+	float: right;
+	width: 60%;
+	padding-left: 10px;
+}
+
+
 #blindsBreakdown{
 	width: 110%;
 }
