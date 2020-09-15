@@ -175,6 +175,27 @@ div#policyMakerText h6{
 width: 50%;
 }
 
+
+blockquote{
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left: 2px solid #F8C133;
+    background-color: transparent;
+    color: #F8C133;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    float: none;
+    clear: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
 .left{
 	float: left;
 	width: 10%;
@@ -332,7 +353,9 @@ div.animated{
 	p{
 		font-size: .9em;
 	}
-
+	li{
+	  font-size: .9em;
+	}
 	 ul.dashed li{
             font-size: .9em;
         }
@@ -358,6 +381,8 @@ div.animated{
 	}
 
 }
+
+
 
 @media (max-width: 700px){
 
