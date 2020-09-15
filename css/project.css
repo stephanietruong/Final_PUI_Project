@@ -176,6 +176,11 @@ width: 50%;
 }
 
 
+.projectPage{
+	margin: auto; 
+	width:60%;
+}
+
 blockquote{
     display: block;
     margin-top: 16px;
@@ -513,6 +518,11 @@ div.animated{
 
 	section{
 		width: 70%;
+	}
+
+	.projectPage{
+		margin: auto; 
+		width:70%;
 	}
 
 	.projectPic2{
