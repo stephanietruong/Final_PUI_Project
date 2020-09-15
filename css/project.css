@@ -175,12 +175,6 @@ div#policyMakerText h6{
 width: 50%;
 }
 
-<<<<<<< HEAD
-
-.projectPage{
-	margin: auto; 
-	width:60%;
-}
 
 blockquote{
     display: block;
@@ -202,8 +196,6 @@ blockquote{
     letter-spacing: 0.2px;
 }
 
-=======
->>>>>>> parent of 6e05513... Updated layout
 .left{
 	float: left;
 	width: 10%;
@@ -361,7 +353,9 @@ div.animated{
 	p{
 		font-size: .9em;
 	}
-
+	li{
+	  font-size: .9em;
+	}
 	 ul.dashed li{
             font-size: .9em;
         }
@@ -387,6 +381,8 @@ div.animated{
 	}
 
 }
+
+
 
 @media (max-width: 700px){
 
@@ -517,11 +513,6 @@ div.animated{
 
 	section{
 		width: 70%;
-	}
-
-	.projectPage{
-		margin: auto; 
-		width:70%;
 	}
 
 	.projectPic2{
