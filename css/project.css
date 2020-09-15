@@ -172,7 +172,12 @@ div#policyMakerText h6{
 
 .projectPic2{
 /*	max-height: 400px;*/
-width: 50%;
+	width: 50%;
+}
+
+.projectPagediv{
+	margin: auto; 
+	width:60%;
 }
 
 
@@ -350,6 +355,11 @@ div.animated{
 		margin: auto;
 	}
 
+	.projectPagediv{
+		margin: auto; 
+		width:70%;
+	}
+
 	p{
 		font-size: .9em;
 	}
@@ -513,6 +523,11 @@ div.animated{
 
 	section{
 		width: 70%;
+	}
+
+	.projectPagediv{
+		margin: auto; 
+		width:70%;
 	}
 
 	.projectPic2{
