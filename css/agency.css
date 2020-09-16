@@ -222,10 +222,13 @@ header.masthead {
   text-align: center;
   color: #212529;
 /*  background-image: url("../img/isaac-benhesed-onLbXleIkds-unsplash.jpg");*/
+  background-image: url("../img/pexels-lumn-316466.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  max-height: 600px;
+  width: 100%;
 
 }
 
