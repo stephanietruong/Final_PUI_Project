@@ -33,7 +33,7 @@ h6{
 
 
 p{
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.0em;
 }
 
@@ -46,7 +46,7 @@ ul{
 
 li{
 	font-size: 1.0em;
-	font-weight: 300;
+	font-weight: 400;
 	font-family: 'Open+Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	margin-bottom: .5em;
 }
@@ -189,7 +189,7 @@ blockquote{
     padding-bottom: 0px;
     border-left: 2px solid #F8C133;
     background-color: transparent;
-    color: #F8C133;
+    color: #000000;
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
@@ -197,6 +197,8 @@ blockquote{
     float: none;
     clear: none;
     font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
     line-height: 24px;
     letter-spacing: 0.2px;
 }
